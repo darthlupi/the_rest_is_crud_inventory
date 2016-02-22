@@ -42,4 +42,5 @@ CREATE TABLE `servers` (
   a. inventory/preheader.php
   b. api/api.php at the END of the file
 7. I have fun python script that will take a csv and list of columns as input to populate the table.  
-  a.  Example:  scripts/inventory_pop.py  --infile="file.csv" --columns="host,ip,ilo"
+  a.  Example to load csv:  scripts/inventory_pop.py  --infile="file.csv" --columns="host,ip,ilo"
+  b.  Example to load host using anisble facts: scripts/inventory_pop.py  --infile="file.lst" --ansible="yes"
