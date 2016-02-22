@@ -41,4 +41,5 @@ CREATE TABLE `servers` (
 6. Configure your database and login information in these two places:
   a. inventory/preheader.php
   b. api/api.php at the END of the file
-7. 
+7. I have fun python script that will take a csv and list of columns as input to populate the table.  
+  a.  Example:  scripts/inventory_pop.py  --infile="file.csv" --columns="host,ip,ilo"
