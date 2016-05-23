@@ -43,7 +43,7 @@
     $tbl_inv->showCSVExportOption();
     #Cool formating if you want it
     #$tbl_inv->formatFieldWithFunction('hostname', 'makeBlue');
-    echo "<h2>MST IFS Linux Inventory</h2>\n";
+    echo "<h2>Inventory</h2>\n";
     $tbl_inv->showTable();
 
     echo "<br /><hr ><br />\n";
