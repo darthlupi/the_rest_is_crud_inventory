@@ -2,7 +2,7 @@
 This project is a combination of the following projects 
   * ajaxCRUD by http://www.loudcanvas.com,
   * MySQL-CRUD-API by https://www.leaseweb.com
-  * ansible python module
+  * ansible python module  -BROKEN UNTIL I UPDATED IT FOR ANSIBLE 2
   
 The idea is to create a web based inventory that is modifiable from a web interface or from REST calls.
 I also have created python scripts that will validate health and configuration via ssh and ansible facts.
@@ -42,5 +42,7 @@ CREATE TABLE `servers` (
   a. inventory/preheader.php
   b. api/api.php at the END of the file
 7. I have fun python script that will take a csv and list of columns as input to populate the table.  
-  a.  Example to load csv:  scripts/inventory_pop.py  --infile="file.csv" --columns="host,ip,ilo"
+  a.  Example to load csv:  scripts/inventory_pop.py  ./scripts/inventory_pop.py --infile="/tmp/list2.csv" --columns="hostname,status,primary_ip"
   b.  Example to load host using anisble facts: scripts/inventory_pop.py  --infile="file.lst" --ansible="yes"
+8. To actually use the API for the example data base you can access it at this URL replacing localhost and WEBDIRECTORY with where ever your webserver is located:
+  http://localhost/WEBDIRECTORY/api/api.php/servers
